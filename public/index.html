@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+    <style type="text/css">
+        .point {
+            width: 20px;
+            height: 20px;
+
+            position: absolute;
+            top:-5vw;
+            left:-5vw;
+
+            background-color: black;
+            border-radius:2vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="point"></div>
+    <!-- Add your site or application content here -->
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+
+        getAllDots();
+
+        document.addEventListener("click", function (e) {
+
+            postDot(e.x, e.y);
+            createDot(e.x, e.y);
+
+        });
+    </script>
+
+</body>
+
+</html>
